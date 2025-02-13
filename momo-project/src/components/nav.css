@@ -1,0 +1,14 @@
+*{
+    font-size: 14px;
+    border-color: gainsboro !important;
+}
+
+
+.Contact_us_btn{
+    width: 119px;
+    height: 41px;
+    background: #D95103;
+    color: white;
+    font-size: 14px;
+    border-radius: 40px;
+}
