@@ -13,9 +13,9 @@ function Navbar() {
         <img src={Logo} />
         <section className=" flex gap-4  items-center">
           <h1>About US</h1>
-          <h1>About US</h1>
-          <h1>About US</h1>
-          <h1>About US</h1>
+          <h1>Our Menu</h1>
+          <h1>Our Services</h1>
+          <h1>Allergy Advice</h1>
 
 
         </section>

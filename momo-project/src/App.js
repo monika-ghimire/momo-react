@@ -2,13 +2,16 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRoutes from "./routes";
 import Navbar from "./components/Navbar";
+import Footer from "./components/footer";
+
 
 function App() {
   return (
     <Router>
-          <Navbar />
+      <Navbar />
 
       <AppRoutes />
+      <Footer />
     </Router>
   );
 }

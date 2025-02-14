@@ -2,6 +2,7 @@
     color: #D95103;
 }
 
+
 .explore-btn{
     width: 189px;
     height: 51px;
@@ -12,4 +13,51 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.icon-btn button{
+width:48px ;
+height: 48px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid gainsboro;
+cursor: pointer;
+background-color: white;
+}
+.icon-btn button:hover{
+    background: #d9510338;
+
+}
+input,
+textarea,select {
+    border: 1px solid #bcbcbc70;
+    outline: none;
+    padding: 18px;
+    border-radius: 6px;
+}
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover
+ {
+    border-color: #434343 !important;
+    transition: border-color 0.5s ease !important;
+}
+
+
+
+
+
+textarea{
+    resize: none;
+}
+
+.send-mgs-btn{
+    background-color: #D95103;
+    Width:100%;
+    height: 59px;
+    border-radius: 8px;
+    color: white;
+
 }

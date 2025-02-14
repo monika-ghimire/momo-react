@@ -1,23 +1,26 @@
 import React, { useState } from "react";
+import img2 from '../../images/pngegg 1.png'
+import img1 from '../../images/pngwing 2.png'
+import img3 from '../../images/chilli-momo.png'
 
 function Recipes() {
     const [activeTab, setActiveTab] = useState("buff"); 
 
     const recipes = {
         buff: [
-            { name: "Buff stem momo", price: "120rs" },
-            { name: "Buff fry momo", price: "150rs" },
-            { name: "Buff Chilly momo", price: "130rs" },
+            { img:img1 ,name: "Buff stem momo", price: "120rs" },
+            { img:img2 ,name: "Buff fry momo", price: "150rs" },
+            { img:img3 ,name: "Buff Chilly momo", price: "130rs" },
         ],
         chicken: [
-            { name: "Chicken momo", price: "140rs" },
-            { name: "Chicken fry momo", price: "170rs" },
-            { name: "Chicken Chilly momo", price: "160rs" },
+            { img:img1 ,name: "Chicken momo", price: "140rs" },
+            { img:img2 ,name: "Chicken fry momo", price: "170rs" },
+            { img:img3 ,name: "Chicken Chilly momo", price: "160rs" },
         ],
         veg: [
-            { name: "Veg momo", price: "100rs" },
-            { name: "Veg fry momo", price: "120rs" },
-            { name: "Veg Chilly momo", price: "110rs" },
+            { img:img1 ,name: "Veg momo", price: "100rs" },
+            { img:img2 ,name: "Veg fry momo", price: "120rs" },
+            { img:img3 ,name: "Veg Chilly momo", price: "110rs" },
         ],
     };
 
@@ -28,12 +31,12 @@ function Recipes() {
     };
 
     return (
-        <section>
-            <section className="flex flex-col justify-center items-center my-12">
+        <section className="!my-[8rem]">
+            <section className="flex flex-col justify-center items-center py-8  ">
                 <h1 className="!text-[39px] font-bold">
                     Our <span className="higlight-text !text-[39px] font-bold">Most Popular</span> Recipes
                 </h1>
-                <h1 className="text-sm">Browse through a variety of recipes with fresh ingredients selected only from the best places</h1>
+                <h1 className="!text-lg text-neutral-500 mt-4">Browse through a variety of recipes with fresh ingredients selected only from the best places</h1>
             </section>
 
          
@@ -52,13 +55,14 @@ function Recipes() {
             <section className="my-4">
             <section className="grid grid-cols-3 w-3/5 mx-auto ">
                 {recipes[activeTab].map((recipe, index) => (
-                    <section key={index} className="my-2 flex flex-col justify-center items-center">
-                        <h1>{recipe.name}</h1>
-                        <h1>Price: {recipe.price}</h1>
+                    <section key={index} className="my-8 gap-4 flex flex-col justify-center items-center">
+                        <img src={recipe.img} />
+                        <h1 className="!text-[22px] font-bold">{recipe.name}</h1>
+                        <h1  className="font-bold !text-lg">RS.<span className="font-bold !text-[22px] higlight-text">{recipe.price}</span> </h1>
                     </section>
                 ))}
             </section>
-            <button className="explore-btn mt-8 mx-auto">
+            <button className="explore-btn mt-8 mx-auto !w-[272px] !h-[64px] !text-[18px]">
             Explore Our Menu
           </button>
             </section>
